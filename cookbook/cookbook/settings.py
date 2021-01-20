@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    "graphene_django",
     "cookbook.ingredients",
     'django.contrib.admin',
     'django.contrib.auth',
@@ -100,7 +101,9 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
+GRAPHENE = {
+    "SCHEMA": "cookbook.schema.schema"
+}
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
 
